@@ -1,0 +1,75 @@
+<!doctype html>
+<html lang="en">
+<head>
+    <meta charset="utf-8">
+    <title>Aaron Stott | Project 2</title>
+    <meta name="description" content="">
+    <link rel="stylesheet prefetch" href="https://use.fontawesome.com/releases/v5.8.1/css/solid.css">
+    <link rel="stylesheet prefetch" href="https://use.fontawesome.com/releases/v5.8.1/css/fontawesome.css">
+    <link rel="stylesheet prefetch" href="https://fonts.googleapis.com/css?family=Roboto+Condensed:300,400,500">
+    <link rel="stylesheet" href="css/app.css">
+    <link rel="shortcut icon" href="img/favicon.ico"/>
+</head>
+<body>
+    <div class="container">
+        <header class="header">
+            <div class="header__inner">
+                <img class="header__logo" src="img/AS-dark.png" alt="logo">
+                <div class="header__text">
+                    <h1 class="header__title">MATCHING GAME</h1>
+                </div>
+            </div>
+        </header>
+
+        <section class="score__panel">
+            <div class="highscore highscore-hide">
+                HIGH SCORE
+                <div class="highscore__content"></div>
+            </div>
+
+            <div class="currentscore">
+                <ul class="stars">
+                    <li><i class="fa fa-star"></i></li>
+                    <li><i class="fa fa-star"></i></li>
+                    <li><i class="fa fa-star"></i></li>
+                    <li><i class="fa fa-star"></i></li>
+                    <li><i class="fa fa-star"></i></li>
+                </ul>
+
+                <div class="score">
+                    <span class="moves">0</span> moves | <span class="timer">00:00:00</span>
+                </div>
+            </div>
+
+            <div class="restart">
+        		<i class="fa fa-redo-alt"></i> Restart
+        	</div>
+        </section>
+
+        <ul class="deck"></ul>
+
+        <div class="win__panel">
+            <div class="win__content">
+                Congratulations, you completed the game!
+                <div class="results">
+                    <ul class="stars"></ul>
+                    <div class="score">
+                        <span class="moves">0</span> moves | <span class="timer">00:00:00</span>
+                    </div>
+                </div>
+                <div class="newhighscore">NEW HIGH SCORE!</div>
+                <div class="restart">
+                    <i class="fa fa-redo-alt"></i> Play Again?
+                </div>
+            </div>
+        </div>
+
+        <footer class="footer">
+            <div class="footer__inner"></div>
+        </footer>
+    </div>
+
+    <script src="js/moment.min.js"></script>
+    <script src="js/app.js"></script>
+</body>
+</html>
